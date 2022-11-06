@@ -1,0 +1,32 @@
+body{
+    font-family: helvetica /*fuente de letra*/
+    font size 20px /* para el tamaño de la letra*/
+    min-height 100vh
+    max-width 400px
+    margin 0 auto
+
+    background-image url('https://previews.123rf.com/images/stacyt13/stacyt131606/stacyt13160600036/58294150-sin-patr%C3%B3n-con-los-objetos-de-la-moda-de-la-mujer-ropa-y-accesorios-de-fondo-sin-fisuras-en-el-estil.jpg')
+    background-attachment fixed
+    background-repeat no-repeat
+    background-size cover/*para que cubra toda la página*/
+    color #ffffff
+
+    background-position center center;
+}
+
+h1 {
+    color: slategray;
+    background-color: lightcoral;
+    border: 1px solid black;
+}
+
+main{
+    background-color: lightcoral;
+    color: rgba(0, 0, 0, 0.262);
+
+
+}
+ #textotiposdetarjetas{color: #521feb; }/*por lo general al último personalizo los párrafos*/
+ #textoazul{color: #521feb; } 
+
+
