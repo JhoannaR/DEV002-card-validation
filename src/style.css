@@ -1,17 +1,19 @@
 body{
     font-family: helvetica /*fuente de letra*/
     font size 20px /* para el tamaño de la letra*/
-    min-height 100vh
+
+    
+    background-image url('img/fondo.png');
+    background: size 1500px;
+   /* min-height 100vh
     max-width 400px
     margin 0 auto
-
-    background-image url('https://previews.123rf.com/images/stacyt13/stacyt131606/stacyt13160600036/58294150-sin-patr%C3%B3n-con-los-objetos-de-la-moda-de-la-mujer-ropa-y-accesorios-de-fondo-sin-fisuras-en-el-estil.jpg')
     background-attachment fixed
     background-repeat no-repeat
-    background-size cover/*para que cubra toda la página*/
+    background-size cover/*para que cubra toda la página
     color #ffffff
 
-    background-position center center;
+    background-position center center;*/
 }
 
 h1 {
@@ -29,4 +31,51 @@ main{
  #textotiposdetarjetas{color: #521feb; }/*por lo general al último personalizo los párrafos*/
  #textoazul{color: #521feb; } 
 
+
+.modal{
+    display: none;
+    background: rgba(0, 0, 0, 4);
+    width: 100vw;
+    height: 100vh;
+    top :0;
+    left:0;
+    position: fixed;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+
+}
+.modal-container{
+background: #fff;
+min-width: 480px;
+max-width: 98%;
+min-height: 308px;
+max-height: 90%;
+padding: 20px;
+border-radius: 15px;
+position: relative;
+
+}
+.modal-container img{
+    z-index: index 1;;
+    
+    
+    }
+
+.close-modal{
+background: red;
+width: 36px;
+height: 36px;
+display: flex;
+justify-content: center;
+align-items: center;
+color: #fff;
+font-size: 1.3rem;
+border-radius: 50%;
+position: absolute;
+right: -10px;
+top: -10px;
+cursor: pointer;
+}
 

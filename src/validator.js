@@ -14,7 +14,7 @@ const validator = {
       }
     }
     var suma = 0;
- /*  console.log(arrayCardInvertido)*/ /*muestra el array invertido con la suma de cifras de sus numeros pares duplicados si son mayores que 10*/
+    /*  console.log(arrayCardInvertido)*/ /*muestra el array invertido con la suma de cifras de sus numeros pares duplicados si son mayores que 10*/
     for (var j = 0; j < arrayCardInvertido.length; j++) {
       suma += arrayCardInvertido[j];
     }
@@ -66,6 +66,6 @@ const validator = {
 
   },
 
-}
+};
 
 export default validator;  /* el export es para utilizarlo en otro archivo(index.js)*/
