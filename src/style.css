@@ -1,9 +1,9 @@
 body{
-    font-family: helvetica /*fuente de letra*/
-    font size 20px /* para el tamaño de la letra*/
+    /*font-family: helvetica /*fuente de letra
+    font size 20px  para el tamaño de la letra */
 
     
-    background-image url('img/fondo.png');
+    background-image: url('img/fondo.png');
     background: size 1500px;
    /* min-height 100vh
     max-width 400px
@@ -25,6 +25,7 @@ h1 {
 main{
     background-color: lightcoral;
     color: rgba(0, 0, 0, 0.262);
+    /*justify-content: center;*/
 
 
 }
@@ -47,7 +48,8 @@ main{
 
 }
 .modal-container{
-background: #fff;
+background-image: url('img/fondo.png');
+/*background: #fff;*/
 min-width: 480px;
 max-width: 98%;
 min-height: 308px;
@@ -55,13 +57,9 @@ max-height: 90%;
 padding: 20px;
 border-radius: 15px;
 position: relative;
+justify-content: center;
 
 }
-.modal-container img{
-    z-index: index 1;;
-    
-    
-    }
 
 .close-modal{
 background: red;
