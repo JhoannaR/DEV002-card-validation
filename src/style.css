@@ -1,11 +1,11 @@
-body{
+body {
     /*font-family: helvetica /*fuente de letra
     font size 20px  para el tamaño de la letra */
 
-    
+
     background-image: url('img/fondo.png');
     background: size 1500px;
-   /* min-height 100vh
+    /* min-height 100vh
     max-width 400px
     margin 0 auto
     background-attachment fixed
@@ -16,30 +16,63 @@ body{
     background-position center center;*/
 }
 
+#contenedor {
+
+    display: flex;
+    Justify-content: center;
+}
+
+#tarjeta {
+    margin: none;
+    flex-direction: column;
+
+}
+
+
+
+
 h1 {
     color: slategray;
-    background-color: lightcoral;
+    background-color: #f3a8a8;
     border: 1px solid black;
 }
 
-main{
-    background-color: lightcoral;
+main {
+    background-color: #f3a8a8;
     color: rgba(0, 0, 0, 0.262);
-    /*justify-content: center;*/
+    justify-content: center;
+    /* position: absolute;
+    top: 10%;
+    left: 40%;*/
+    align-items: center;
 
 
 }
- #textotiposdetarjetas{color: #521feb; }/*por lo general al último personalizo los párrafos*/
- #textoazul{color: #521feb; } 
+
+label {
+    color: #521feb;
+}
 
 
-.modal{
+
+
+#textotiposdetarjetas {
+    color: #521feb;
+}
+
+/*por lo general al último personalizo los párrafos*/
+#textoazul {
+    color: #521feb;
+}
+
+
+.modal {
     display: none;
-    background: rgba(0, 0, 0, 4);
+    background: rgba(0, 0, 0, 0.4);
     width: 100vw;
     height: 100vh;
-    top :0;
-    left:0;
+    top: 0;
+    left: 0;
     position: fixed;
     padding: 20px;
     justify-content: center;
@@ -47,33 +80,50 @@ main{
     z-index: 100;
 
 }
-.modal-container{
-background-image: url('img/fondo.png');
-/*background: #fff;*/
-min-width: 480px;
-max-width: 98%;
-min-height: 308px;
-max-height: 90%;
-padding: 20px;
-border-radius: 15px;
-position: relative;
-justify-content: center;
+
+.modal-container {
+   /* background-image: url('img/fondo.png');*/
+    background: #f3a8a8;
+    /*background: #fff;*/
+    min-width: 480px;
+    max-width: 98%;
+    min-height: 308px;
+    max-height: 90%;
+    padding: 20px;
+    border-radius: 15px;
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 
 }
-
-.close-modal{
-background: red;
-width: 36px;
-height: 36px;
-display: flex;
-justify-content: center;
-align-items: center;
+.modal-container h2 {
 color: #fff;
-font-size: 1.3rem;
-border-radius: 50%;
-position: absolute;
-right: -10px;
-top: -10px;
-cursor: pointer;
 }
+/*.modal-container #prueba {      para ac ceder con el id
+    color: #fff;
+    }
+*/
+.modal-container p {
+    color: black;
+    width: 80%;
+    text-align: center;
+    }
 
+.close-modal {
+    background: red;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 1.3rem;
+    border-radius: 50%;
+    position: absolute;
+    right: -10px;
+    top: -10px;
+    cursor: pointer;
+}

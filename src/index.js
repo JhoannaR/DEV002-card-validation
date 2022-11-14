@@ -8,6 +8,9 @@ const modalAddValid = document.querySelector('#modalAddValid');
 const botonCloseModal = document.querySelector('#botonCloseModal')
 const botonCloseModalValid = document.querySelector('#botonCloseModalValid')
 
+const botonCloseModalPrueba =document.getElementsByClassName('botonCloseModalPrueba') 
+console.log(botonCloseModalPrueba.length)
+
 const verificara = document.getElementById('botonValidar')
 const ocultara = document.getElementById('botonValidar')
 const prueba = document.getElementById('prueba')
@@ -36,6 +39,12 @@ function closeModalValid() {
 
 botonCloseModal.addEventListener('click', closeModal)
 botonCloseModalValid.addEventListener('click', closeModalValid)
+
+for (let index = 0; index < botonCloseModalPrueba.length; index = index + 1) {
+  botonCloseModalPrueba[index].addEventListener('click', closeModal)
+//para los botones Reintentar y Cancelar de la pantalla triste
+};
+
 
 verificara.addEventListener('click', function () {
   var valid = validator.isValid(inputNumero.value);

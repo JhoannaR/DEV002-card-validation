@@ -52,16 +52,15 @@ const validator = {
       var cadenaOculta = cadenaMichis + w + x + y + z;
       return (cadenaOculta);
     }
-    else
-      if (arrayCardNumber.length == 1)
-        return z;
-      else
-        if (arrayCardNumber.length === 2)
-          return y + z;
-        else
-          if (arrayCardNumber.length === 3)
-            return x + y + z;
-          else w + x + y + z;
+    else if (arrayCardNumber.length == 1){
+      return z;}
+    else if (arrayCardNumber.length === 2)
+    {return y + z;}
+   else if (arrayCardNumber.length === 3)
+     { return x + y + z;}
+    else {w + x + y + z;}
+      
+      
 
 
   },
